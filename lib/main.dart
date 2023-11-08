@@ -5,16 +5,19 @@ void main() {
 }
 
 class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+  const MainApp({required this.chatApi, super.key});
+
+  final ChatApi chatApi;
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return  MaterialApp(
+      title: 'AI_Driven_Chat_Application_Flutter',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
+      home: ChatPage(chatApi: chatApi),
     );
   }
 }
