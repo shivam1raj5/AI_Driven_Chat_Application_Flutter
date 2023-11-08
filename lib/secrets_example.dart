@@ -1,0 +1,2 @@
+const openAiApiKey = '#############################################';
+const openAiOrg = '';
