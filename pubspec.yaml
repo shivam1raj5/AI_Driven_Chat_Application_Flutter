@@ -7,8 +7,11 @@ environment:
   sdk: '>=3.1.2 <4.0.0'
 
 dependencies:
+  cupertino_icons: ^1.0.2
+  dart_openai: ^1.8.0
   flutter:
     sdk: flutter
+  markdown_widget: ^2.0.0+1
 
 dev_dependencies:
   flutter_test:
